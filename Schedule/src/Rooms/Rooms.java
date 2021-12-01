@@ -21,7 +21,7 @@ public class Rooms {
     }
     public void addRoom(Room room){
         for (int i=0;i<rooms.length;i++){
-            if ((rooms[i]==null)){
+            if (!(rooms[i]==null)){
                 rooms[i]=room;
                 break;
             }
