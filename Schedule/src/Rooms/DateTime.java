@@ -69,7 +69,8 @@ public class DateTime {
             return true;
         } else if(this.year == other.getYear() && this.month == other.getMonth() && this.day == other.getDay()&&this.hour<other.hour){
             return true;
-        } else if(this.year == other.getYear() && this.month == other.getMonth() && this.day == other.getDay()&&this.hour==other.hour&&this.minute<other.minute){
+        } else if(this.year == other.getYear() && this.month == other.getMonth() && this.day == other.getDay()
+                &&this.hour==other.hour&&this.minute<other.minute){
             return true;
         } else return false;
     }

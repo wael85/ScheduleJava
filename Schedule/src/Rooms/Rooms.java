@@ -10,7 +10,7 @@ public class Rooms {
     public Rooms(int size){
         this.rooms=new Room[size];
     }
-    public ArrayList<Room>getRooms(){
+    public ArrayList<Room> getRooms(){
         ArrayList<Room>roomsList=new ArrayList<>();
         for (int i=0;i< rooms.length;i++){
             if (!(rooms[i]==null)){

@@ -14,6 +14,7 @@ public class Schedule {
         this.id=id;
         this.semester=semester;
         this.className=className;
+
         this.courses=new ArrayList<>();
 
     }
