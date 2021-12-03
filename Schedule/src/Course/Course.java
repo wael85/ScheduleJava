@@ -1,5 +1,7 @@
 package Course;
 
+import Person.Students;
+import Person.Teachers;
 import Rooms.Room;
 
 import java.util.ArrayList;
@@ -23,8 +25,8 @@ public class Course {
         this.name = courseName;
         this.className = className;
         this.rooms = new ArrayList<>();
-        this.students = new ArrayList<Students>();
-        this.teachers = new ArrayList<Teachers>();
+        this.students = new ArrayList<>();
+        this.teachers = new ArrayList<>();
     }
 
     public int getECTS() {
@@ -49,6 +51,15 @@ public class Course {
 
     public void setClassID(String className) {
         this.className = className;
+    }
+    public boolean equals( Object obj){
+        if ((obj instanceof Course)){
+            return false;
+        }
+        Course other= (Course) obj;
+
+        return eCTS==other.eCTS &&semester.equals(other.semester)&&name.equals(other.name)&&className.equals(other.className)
+                &&rooms.equals(other.rooms)&&students.equals(other.students)&&teachers.equals(other.teachers);
     }
 
 }

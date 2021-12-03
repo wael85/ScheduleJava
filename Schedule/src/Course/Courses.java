@@ -6,7 +6,8 @@ public class Courses {
 
     private ArrayList<Course> coursesList;
 
-    public Courses() {
+    public Courses(ArrayList<Course> coursesList) {
+
         coursesList = new ArrayList<>();
     }
 
